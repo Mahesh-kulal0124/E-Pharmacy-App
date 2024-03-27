@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".pharmacy">
+
+    <ImageButton
+        android:id="@+id/image_btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="@string/hint_search"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/baseline_menu_48" />
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/pastillas_2"
+        android:layout_alignParentEnd="true"/>
+    <ScrollView
+        android:id="@+id/scroll_view_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_btn_menu">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_E_pharmacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/E_Pharmacy"
+                android:textSize="42sp"
+                android:textColor="@color/color_8"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_search"
+                android:layout_margin="16dp"
+                app:hintTextColor="@color/color_1"
+                app:startIconDrawable="@drawable/baseline_search_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/color_1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/tv_shop_by_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shop_by_category"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_popular_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/popular_products"
+                android:textColor="@color/black" />
+
+            <HorizontalScrollView
+             android:id="@+id/horizontal_products"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="16dp">
+
+             <LinearLayout
+                 android:id="@+id/linear_layout_products"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:onClick="in"
+                 android:orientation="horizontal" >
+
+             </LinearLayout>
+
+         </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

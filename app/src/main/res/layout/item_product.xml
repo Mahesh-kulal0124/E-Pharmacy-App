@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_products"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:cardBackgroundColor="@color/color_9">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/image_fav_product"
+                android:layout_width="39dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@null"
+                android:contentDescription="@string/health"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/baseline_favorite_border_24" />
+
+            <ImageView
+                android:id="@+id/image_product"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/medicina3"
+                android:layout_below="@+id/image_fav_product"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_name_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multi_vitamins"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/image_product"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_pills_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pils_90"
+                android:textColor="@color/black"
+                android:layout_below="@id/tv_name_product"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/pricelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pills_product"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:text="Rs."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_final_price_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pills_product"
+                android:layout_toRightOf="@id/pricelabel"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/final_price_217"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/pricelabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pills_product"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toEndOf="@id/tv_final_price_product"
+                android:text="Rs." />
+            <TextView
+                android:id="@+id/tv_price_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pills_product"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toEndOf="@id/pricelabel1"
+                android:text="@string/price_287" />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

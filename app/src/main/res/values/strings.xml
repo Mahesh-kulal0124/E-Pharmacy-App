@@ -1,0 +1,35 @@
+<resources>
+    <string name="descriptionGrocery">Freshly laid white shelled poultry eggs</string>
+
+    <string name="E_Pharmacy">Online\nPharmacy</string>
+    <string name="hint_search">Search fpr drug,doctors,etc.....</string>
+    <string name="shop_by_category">Shop by category</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="Consultation">Consultation</string>
+    <string name="medicines">Medicines</string>
+    <string name="lab_tests">Lab Tests</string>
+    <string name="health">Health</string>
+    <string name="omega_3">Omega</string>
+    <string name="vitamins">Vitamins</string>
+    <string name="multi_vitamins">Multi Vitamins</string>
+    <string name="pils_90">90 pils</string>
+    <string name="final_price_217">217</string>
+    <string name="final_price">Final Price</string>
+    <string name="price_287">287</string>
+    <string name="test">Tets</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="info_detail">
+    Omega-3 fatty acids are found in foods, \nsuch as fish and flaxseed,\n
+    and in dietary supplements, \nsuch as fish oil.\n The three main omega-3\n
+    fatty acids are alpha-linolenic acid (ALA),\n eicosapentaenoic acid (EPA), and\n
+    docosahexaenoic acid (DHA). ALA is \nfound mainly in plant oils such as flaxseed,\n
+    soybean, and canola oils.
+    </string>
+
+    <string name="add_to_basket">Add to Basket</string>
+    <string name="Order_Now">Order Now</string>
+</resources>
+
+
+
+
